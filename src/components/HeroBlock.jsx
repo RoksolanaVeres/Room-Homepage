@@ -29,12 +29,13 @@ export default function HeroBlock({ menuOpen, setMenuOpen }) {
           <p className="pt-5 pb-10 text-sm text-darkGray xl:text-base">
             {furniture[pageNum].description}
           </p>
-          <div className="flex gap-4 items-center">
-            <a href="#" className="uppercase font-bold tracking-[10px]">
-              Shop now
-            </a>
-            <ArrowIcon />
-          </div>
+
+          <a
+            href="#"
+            className="group flex gap-4 items-center uppercase font-bold tracking-[10px] hover:text-darkGray"
+          >
+            Shop now <ArrowIcon />
+          </a>
         </div>
         <GalleryButtons
           setPageNum={setPageNum}

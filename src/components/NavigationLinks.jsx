@@ -6,7 +6,9 @@ export default function NavigationLinks({ ...props }) {
       {links.map((link) => {
         return (
           <li key={link}>
-            <a href="#">{link}</a>
+            <a className="pb-2 hover:border-b-2 border-white" href="#">
+              {link}
+            </a>
           </li>
         );
       })}
